@@ -15,8 +15,8 @@ return new class extends Migration
     {
         Schema::create('client_companies', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('client_id')->constrained();
-            $table->foreignId('company_id')->constrained();
+            $table->foreignId('client_id')->constrained()->cascadeOnDelete();
+            $table->foreignId('company_id')->constrained()->cascadeOnDelete();
             $table->timestamps();
         });
     }
