@@ -24,7 +24,7 @@ Installation:
 
 3. run ``` $ make install```
 
-4. ```$ php artisan migrate --seed```
+4. ```$ db-fresh-install```
 
 5. local start ```$ make start-app```
 
